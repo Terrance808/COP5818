@@ -1,0 +1,269 @@
+{
+	"info": {
+		"_postman_id": "6aef2d28-9714-4ca6-b0ab-7e2023c0cd3c",
+		"name": "FRED",
+		"description": "FRED API with various indicators",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "HOME",
+			"id": "3e99a012-3699-450d-aeca-9f40e7d0420c",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://fred.stlouisfed.org/?77a692bbcabfe758a81e1500815f0d78",
+					"protocol": "https",
+					"host": [
+						"fred",
+						"stlouisfed",
+						"org"
+					],
+					"path": [
+						""
+					],
+					"query": [
+						{
+							"key": "77a692bbcabfe758a81e1500815f0d78",
+							"value": null,
+							"description": "FRED HOME",
+							"type": "text"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "10/2YIELD",
+			"id": "f5ff310c-d463-44b8-b26b-a4ea101cd972",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://fred.stlouisfed.org/series/T10Y2Y/?77a692bbcabfe758a81e1500815f0d78",
+					"protocol": "https",
+					"host": [
+						"fred",
+						"stlouisfed",
+						"org"
+					],
+					"path": [
+						"series",
+						"T10Y2Y",
+						""
+					],
+					"query": [
+						{
+							"key": "77a692bbcabfe758a81e1500815f0d78",
+							"value": null,
+							"type": "text"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FEDERALFUNDS",
+			"id": "539e163c-792b-46f7-a4ec-472c1672e2fa",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://fred.stlouisfed.org/series/fedfunds?77a692bbcabfe758a81e1500815f0d78",
+					"protocol": "https",
+					"host": [
+						"fred",
+						"stlouisfed",
+						"org"
+					],
+					"path": [
+						"series",
+						"fedfunds"
+					],
+					"query": [
+						{
+							"key": "77a692bbcabfe758a81e1500815f0d78",
+							"value": null,
+							"type": "text"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "INDUSTRIALPRODUCTION",
+			"id": "f66e618c-40bd-4873-bc60-300befeab1b2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://fred.stlouisfed.org/series/INDPRO/?77a692bbcabfe758a81e1500815f0d78",
+					"protocol": "https",
+					"host": [
+						"fred",
+						"stlouisfed",
+						"org"
+					],
+					"path": [
+						"series",
+						"INDPRO",
+						""
+					],
+					"query": [
+						{
+							"key": "77a692bbcabfe758a81e1500815f0d78",
+							"value": null,
+							"type": "text"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CPI",
+			"id": "40e147c4-2ef6-4bdf-a235-e0cf8ee3d87c",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://fred.stlouisfed.org/series/USACPIALLMINMEI?77a692bbcabfe758a81e1500815f0d78",
+					"protocol": "https",
+					"host": [
+						"fred",
+						"stlouisfed",
+						"org"
+					],
+					"path": [
+						"series",
+						"USACPIALLMINMEI"
+					],
+					"query": [
+						{
+							"key": "77a692bbcabfe758a81e1500815f0d78",
+							"value": null,
+							"type": "text"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UNEMPLOYMENT",
+			"id": "9f757fb4-9a71-40b9-84ba-4975c87d237c",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://fred.stlouisfed.org/series/UNRATE/?https://fred.stlouisfed.org/series/GDP/",
+					"protocol": "https",
+					"host": [
+						"fred",
+						"stlouisfed",
+						"org"
+					],
+					"path": [
+						"series",
+						"UNRATE",
+						""
+					],
+					"query": [
+						{
+							"key": "https://fred.stlouisfed.org/series/GDP/",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GDP",
+			"id": "67734648-df6b-4916-a9fb-b69a2aeb1cf5",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://fred.stlouisfed.org/series/GDP/?https://fred.stlouisfed.org/series/GDP/",
+					"protocol": "https",
+					"host": [
+						"fred",
+						"stlouisfed",
+						"org"
+					],
+					"path": [
+						"series",
+						"GDP",
+						""
+					],
+					"query": [
+						{
+							"key": "https://fred.stlouisfed.org/series/GDP/",
+							"value": null,
+							"type": "text"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "M2",
+			"id": "cc6a1747-6bcb-4ecf-b575-e7c04bc92cf5",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://fred.stlouisfed.org/series/WM2NS?https://fred.stlouisfed.org/series/GDP/",
+					"protocol": "https",
+					"host": [
+						"fred",
+						"stlouisfed",
+						"org"
+					],
+					"path": [
+						"series",
+						"WM2NS"
+					],
+					"query": [
+						{
+							"key": "https://fred.stlouisfed.org/series/GDP/",
+							"value": null,
+							"type": "text"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
