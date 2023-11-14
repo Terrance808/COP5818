@@ -52,7 +52,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://fred.stlouisfed.org/series/T10Y2Y/?77a692bbcabfe758a81e1500815f0d78",
+					"raw": "https://fred.stlouisfed.org/series/?series_id=T10Y2Y&api_key=77a692bbcabfe758a81e1500815f0d78&file_type=json",
 					"protocol": "https",
 					"host": [
 						"fred",
@@ -61,14 +61,20 @@
 					],
 					"path": [
 						"series",
-						"T10Y2Y",
 						""
 					],
 					"query": [
 						{
-							"key": "77a692bbcabfe758a81e1500815f0d78",
-							"value": null,
-							"type": "text"
+							"key": "series_id",
+							"value": "T10Y2Y"
+						},
+						{
+							"key": "api_key",
+							"value": "77a692bbcabfe758a81e1500815f0d78"
+						},
+						{
+							"key": "file_type",
+							"value": "json"
 						}
 					]
 				}
