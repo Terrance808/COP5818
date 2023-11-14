@@ -16,7 +16,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://fred.stlouisfed.org/?77a692bbcabfe758a81e1500815f0d78",
+					"raw": "https://fred.stlouisfed.org/?77a692bbcabfe758a81e1500815f0d78&file_type=json",
 					"protocol": "https",
 					"host": [
 						"fred",
@@ -30,7 +30,11 @@
 						{
 							"key": "77a692bbcabfe758a81e1500815f0d78",
 							"value": null,
-							"description": "FRED HOME",
+							"description": "FRED HOME"
+						},
+						{
+							"key": "file_type",
+							"value": "json",
 							"type": "text"
 						}
 					]
