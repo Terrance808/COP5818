@@ -55,7 +55,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://api.stlouisfed.org/fred/series?series_id=FEDFUNDS&api_key=77a692bbcabfe758a81e1500815f0d78&file_type=json",
+					"raw": "https://api.stlouisfed.org/fred/series/observations?series_id=FEDFUNDS&api_key=77a692bbcabfe758a81e1500815f0d78&file_type=json",
 					"protocol": "https",
 					"host": [
 						"api",
@@ -64,7 +64,8 @@
 					],
 					"path": [
 						"fred",
-						"series"
+						"series",
+						"observations"
 					],
 					"query": [
 						{
@@ -94,7 +95,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://api.stlouisfed.org/fred/series?series_id=INDPRO&api_key=77a692bbcabfe758a81e1500815f0d78&file_type=json",
+					"raw": "https://api.stlouisfed.org/fred/series/observations?series_id=INDPRO&api_key=77a692bbcabfe758a81e1500815f0d78&file_type=json",
 					"protocol": "https",
 					"host": [
 						"api",
@@ -103,7 +104,8 @@
 					],
 					"path": [
 						"fred",
-						"series"
+						"series",
+						"observations"
 					],
 					"query": [
 						{
@@ -133,7 +135,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://api.stlouisfed.org/fred/series?series_id=CPIAUCSL&api_key=77a692bbcabfe758a81e1500815f0d78&file_type=json",
+					"raw": "https://api.stlouisfed.org/fred/series/observations?series_id=CPIAUCSL&api_key=77a692bbcabfe758a81e1500815f0d78&file_type=json",
 					"protocol": "https",
 					"host": [
 						"api",
@@ -142,7 +144,8 @@
 					],
 					"path": [
 						"fred",
-						"series"
+						"series",
+						"observations"
 					],
 					"query": [
 						{
@@ -172,7 +175,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://api.stlouisfed.org/fred/series?series_id=UNRATE&api_key=77a692bbcabfe758a81e1500815f0d78&file_type=json",
+					"raw": "https://api.stlouisfed.org/fred/series/observations?series_id=UNRATE&api_key=77a692bbcabfe758a81e1500815f0d78&file_type=json",
 					"protocol": "https",
 					"host": [
 						"api",
@@ -181,7 +184,8 @@
 					],
 					"path": [
 						"fred",
-						"series"
+						"series",
+						"observations"
 					],
 					"query": [
 						{
@@ -211,7 +215,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://api.stlouisfed.org/fred/series?series_id=GDP&api_key=77a692bbcabfe758a81e1500815f0d78&file_type=json",
+					"raw": "https://api.stlouisfed.org/fred/series/observations?series_id=GDP&api_key=77a692bbcabfe758a81e1500815f0d78&file_type=json",
 					"protocol": "https",
 					"host": [
 						"api",
@@ -220,7 +224,8 @@
 					],
 					"path": [
 						"fred",
-						"series"
+						"series",
+						"observations"
 					],
 					"query": [
 						{
@@ -250,22 +255,30 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://fred.stlouisfed.org/series/WM2NS?https://fred.stlouisfed.org/series/GDP/",
+					"raw": "https://api.stlouisfed.org/fred/series/observations?series_id=M2NS&api_key=77a692bbcabfe758a81e1500815f0d78&file_type=json",
 					"protocol": "https",
 					"host": [
-						"fred",
+						"api",
 						"stlouisfed",
 						"org"
 					],
 					"path": [
+						"fred",
 						"series",
-						"WM2NS"
+						"observations"
 					],
 					"query": [
 						{
-							"key": "https://fred.stlouisfed.org/series/GDP/",
-							"value": null,
-							"type": "text"
+							"key": "series_id",
+							"value": "M2NS"
+						},
+						{
+							"key": "api_key",
+							"value": "77a692bbcabfe758a81e1500815f0d78"
+						},
+						{
+							"key": "file_type",
+							"value": "json"
 						}
 					]
 				}
