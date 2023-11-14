@@ -7,42 +7,6 @@
 	},
 	"item": [
 		{
-			"name": "HOME",
-			"id": "3e99a012-3699-450d-aeca-9f40e7d0420c",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "https://fred.stlouisfed.org/?77a692bbcabfe758a81e1500815f0d78&file_type=json",
-					"protocol": "https",
-					"host": [
-						"fred",
-						"stlouisfed",
-						"org"
-					],
-					"path": [
-						""
-					],
-					"query": [
-						{
-							"key": "77a692bbcabfe758a81e1500815f0d78",
-							"value": null,
-							"description": "FRED HOME"
-						},
-						{
-							"key": "file_type",
-							"value": "json",
-							"type": "text"
-						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
 			"name": "10/2YIELD",
 			"id": "f5ff310c-d463-44b8-b26b-a4ea101cd972",
 			"protocolProfileBehavior": {
