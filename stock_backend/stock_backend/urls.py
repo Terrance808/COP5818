@@ -19,6 +19,7 @@ from django.urls import path
 from myapp.views import get_stock_data, post_stock_data
 
 urlpatterns = [
+    path("admin/", admin.site.urls),
     path("stock-data/<str:ticker_symbol>/", get_stock_data, name = 'stock-data'),
     path("search_stock/", post_stock_data, name = "post-stock-data")
 ]
